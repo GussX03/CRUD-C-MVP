@@ -134,6 +134,8 @@ namespace CRUD_C__MCP.Views
             {
                 instance = new PetView();
                 instance.MdiParent= parentContainer;
+                instance.FormBorderStyle = FormBorderStyle.None;
+                instance.Dock = DockStyle.Fill; // que se abra en todo el espacio
             } else
             {
                 if (instance.WindowState == FormWindowState.Minimized)
