@@ -8,3 +8,4 @@ C:\Users\gusta\Desktop\CRUD_C#_GIT\CRUD_C#_MCP\bin\Debug\CRUD_C#_MCP.exe
 C:\Users\gusta\Desktop\CRUD_C#_GIT\CRUD_C#_MCP\bin\Debug\CRUD_C#_MCP.pdb
 C:\Users\gusta\Desktop\CRUD_C#_GIT\CRUD_C#_MCP\obj\Debug\CRUD_C#_MCP.exe
 C:\Users\gusta\Desktop\CRUD_C#_GIT\CRUD_C#_MCP\obj\Debug\CRUD_C#_MCP.pdb
+C:\Users\gusta\Desktop\CRUD_C#_GIT\CRUD_C#_MCP\obj\Debug\CRUD_C__MCP.Views.MainView.resources

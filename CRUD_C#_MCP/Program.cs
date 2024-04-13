@@ -19,9 +19,8 @@ namespace CRUD_C__MCP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             string sqlConnectionString = ConfigurationManager.ConnectionStrings["SqlConnection"].ConnectionString;
-            IPetView view = new PetView();
-            IPetRepository repository = new PetRepository(sqlConnectionString);
-            new PetPresenter(view, repository);
+            IMainView view = new MainView();
+            new MainPresenter(view, sqlConnectionString);
             Application.Run((Form)view);
         }
     }
