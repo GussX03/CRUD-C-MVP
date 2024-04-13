@@ -126,7 +126,22 @@ namespace CRUD_C__MCP.Views
         {
 
         }
-
+        // Singleton pattern (open a single form instance) 
+        public static PetView instance;
+        public static PetView GetInstance(Form parentContainer)
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PetView();
+                instance.MdiParent= parentContainer;
+            } else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                    instance.WindowState = FormWindowState.Normal;
+                instance.BringToFront();
+            }
+            return instance;
+        }
         
     }
 }
