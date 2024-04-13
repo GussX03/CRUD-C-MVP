@@ -20,6 +20,19 @@ namespace CRUD_C__MCP.Views
         public PetView()
         {
             InitializeComponent();
+            AssociateAndRaiseViewEvents();
+            tabControl1.TabPages.Remove(tabPagePetDetail);
+            btnClose.Click += delegate { this.Close(); };
+        }
+
+        private void AssociateAndRaiseViewEvents()
+        {
+            btnSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
+            txtSearch.KeyDown += (s, e) =>
+            {
+                if (e.KeyCode == Keys.Enter) // si le damos enter
+                    SearchEvent?.Invoke(this, EventArgs.Empty);
+            };
         }
 
         //Properties
@@ -105,6 +118,11 @@ namespace CRUD_C__MCP.Views
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabPagePetDetail_Click(object sender, EventArgs e)
         {
 
         }

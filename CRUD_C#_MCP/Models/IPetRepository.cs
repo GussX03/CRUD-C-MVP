@@ -12,6 +12,6 @@ namespace CRUD_C__MCP.Models
         void Edit(PetModel petModel);
         void Delete(int id);
         IEnumerable<PetModel> GetAll();
-        IEnumerable<PetModel> GetByValue(); // Searchs
+        IEnumerable<PetModel> GetByValue(string value); // Searchs
     }
 }
