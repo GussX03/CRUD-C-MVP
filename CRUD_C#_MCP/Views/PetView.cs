@@ -35,15 +35,45 @@ namespace CRUD_C__MCP.Views
                     SearchEvent?.Invoke(this, EventArgs.Empty);
             };
             // boton nuevo
-            btnAddNew.Click += delegate { AddNewEvent?.Invoke(this, EventArgs.Empty); };
+            btnAddNew.Click += delegate { 
+                AddNewEvent?.Invoke(this, EventArgs.Empty);
+                tabControl1.TabPages.Remove(tabPagePetList);
+                tabControl1.TabPages.Add(tabPagePetDetail);
+                tabPagePetDetail.Text = "Add New Pet";
+
+            };
             // boton editar
-            btnEdit.Click += delegate { EditEvent?.Invoke(this, EventArgs.Empty); };
+            btnEdit.Click += delegate { 
+                EditEvent?.Invoke(this, EventArgs.Empty);
+                tabControl1.TabPages.Remove(tabPagePetList);
+                tabControl1.TabPages.Add(tabPagePetDetail);
+                tabPagePetDetail.Text = "Edit New Pet";
+            };
             // boton guardar cambios
-            btnSave.Click += delegate { SaveEvent?.Invoke(this, EventArgs.Empty); };
+            btnSave.Click += delegate { 
+                SaveEvent?.Invoke(this, EventArgs.Empty); 
+                if (isSuccessfull)
+                {
+                    tabControl1.TabPages.Remove(tabPagePetDetail);
+                    tabControl1.TabPages.Add(tabPagePetList);
+                }
+                MessageBox.Show(message);
+            };
             // boton Cancelar
-            btnCancel.Click += delegate { CancelEvent?.Invoke(this, EventArgs.Empty); };
+            btnCancel.Click += delegate { 
+                CancelEvent?.Invoke(this, EventArgs.Empty);
+                tabControl1.TabPages.Remove(tabPagePetDetail);
+                tabControl1.TabPages.Add(tabPagePetList);
+            };
             // boton eliminar
-            btnDelete.Click += delegate { DeleteEvent?.Invoke(this, EventArgs.Empty); };
+            btnDelete.Click += delegate { 
+                var result = MessageBox.Show("Are you sure you want to delete this record?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    DeleteEvent?.Invoke(this, EventArgs.Empty);
+                    MessageBox.Show(message);
+                }
+            };
         }
 
         //Properties
