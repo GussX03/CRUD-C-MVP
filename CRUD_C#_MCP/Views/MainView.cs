@@ -20,5 +20,10 @@ namespace CRUD_C__MCP.Views
         public event EventHandler ShowPetView;
         public event EventHandler ShowOwnerView;
         public event EventHandler ShowVetsView;
+
+        private void btnPets_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -51,6 +51,7 @@
             this.btnPets.TabIndex = 0;
             this.btnPets.Text = "Pets";
             this.btnPets.UseVisualStyleBackColor = true;
+            this.btnPets.Click += new System.EventHandler(this.btnPets_Click);
             // 
             // MainView
             // 

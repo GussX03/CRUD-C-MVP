@@ -27,12 +27,23 @@ namespace CRUD_C__MCP.Views
 
         private void AssociateAndRaiseViewEvents()
         {
+            // boton buscar
             btnSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
             txtSearch.KeyDown += (s, e) =>
             {
                 if (e.KeyCode == Keys.Enter) // si le damos enter
                     SearchEvent?.Invoke(this, EventArgs.Empty);
             };
+            // boton nuevo
+            btnAddNew.Click += delegate { AddNewEvent?.Invoke(this, EventArgs.Empty); };
+            // boton editar
+            btnEdit.Click += delegate { EditEvent?.Invoke(this, EventArgs.Empty); };
+            // boton guardar cambios
+            btnSave.Click += delegate { SaveEvent?.Invoke(this, EventArgs.Empty); };
+            // boton Cancelar
+            btnCancel.Click += delegate { CancelEvent?.Invoke(this, EventArgs.Empty); };
+            // boton eliminar
+            btnDelete.Click += delegate { DeleteEvent?.Invoke(this, EventArgs.Empty); };
         }
 
         //Properties
