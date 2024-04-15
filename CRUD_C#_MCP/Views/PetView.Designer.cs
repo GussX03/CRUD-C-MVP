@@ -81,7 +81,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(886, 17);
+            this.btnClose.Location = new System.Drawing.Point(1111, 11);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(35, 32);
             this.btnClose.TabIndex = 1;
@@ -127,7 +127,7 @@
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(131, 106);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(695, 363);
+            this.dataGridView.Size = new System.Drawing.Size(728, 363);
             this.dataGridView.TabIndex = 7;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -137,9 +137,9 @@
             this.btnEdit.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnEdit.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEdit.Location = new System.Drawing.Point(864, 146);
+            this.btnEdit.Location = new System.Drawing.Point(931, 239);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(125, 31);
+            this.btnEdit.Size = new System.Drawing.Size(178, 31);
             this.btnEdit.TabIndex = 6;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -150,9 +150,9 @@
             this.btnDelete.BackColor = System.Drawing.Color.Red;
             this.btnDelete.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(864, 183);
+            this.btnDelete.Location = new System.Drawing.Point(931, 285);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(125, 33);
+            this.btnDelete.Size = new System.Drawing.Size(178, 33);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -163,9 +163,9 @@
             this.btnAddNew.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAddNew.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.ForeColor = System.Drawing.Color.Snow;
-            this.btnAddNew.Location = new System.Drawing.Point(864, 106);
+            this.btnAddNew.Location = new System.Drawing.Point(931, 199);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(125, 34);
+            this.btnAddNew.Size = new System.Drawing.Size(178, 34);
             this.btnAddNew.TabIndex = 4;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.UseVisualStyleBackColor = false;
@@ -176,9 +176,9 @@
             this.btnSearch.BackColor = System.Drawing.Color.Orange;
             this.btnSearch.Font = new System.Drawing.Font("Bahnschrift", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSearch.Location = new System.Drawing.Point(864, 64);
+            this.btnSearch.Location = new System.Drawing.Point(931, 157);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(125, 36);
+            this.btnSearch.Size = new System.Drawing.Size(178, 36);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -189,7 +189,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.Location = new System.Drawing.Point(131, 64);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(695, 21);
+            this.txtSearch.Size = new System.Drawing.Size(728, 21);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 

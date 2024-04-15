@@ -51,9 +51,11 @@ namespace CRUD_C__MCP._Repositories
             using (var connection = new SqlConnection(connectionString))
             using (var command = new SqlCommand())
             {
-                connection.Open();
+               connection.Open();
                 command.Connection = connection;
-                command.CommandText = @"update Pet set Pet_Name= @name, Pet_Type= @type, Pet_Colour= @colour where Pet_Id=@id)";
+                command.CommandText = @"update Pet 
+                                        set Pet_Name=@name,Pet_Type= @type,Pet_Colour= @colour 
+                                        where Pet_Id=@id";
                 command.Parameters.Add("@name", SqlDbType.NVarChar).Value = petModel.Name;
                 command.Parameters.Add("@type", SqlDbType.NVarChar).Value = petModel.Type;
                 command.Parameters.Add("@colour", SqlDbType.NVarChar).Value = petModel.Colour;

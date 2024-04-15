@@ -39,7 +39,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 566);
+            this.panel1.Size = new System.Drawing.Size(200, 624);
             this.panel1.TabIndex = 0;
             // 
             // btnPets
@@ -57,7 +57,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 566);
+            this.ClientSize = new System.Drawing.Size(1191, 624);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
             this.Name = "MainView";
